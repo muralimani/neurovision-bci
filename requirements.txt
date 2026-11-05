@@ -1,0 +1,6 @@
+numpy>=1.24
+scipy>=1.10
+websockets>=12.0
+google-genai>=1.50
+matplotlib>=3.7      # only for `generate-data` plots
+tomli>=2.0; python_version < "3.11"

@@ -1,0 +1,20 @@
+# Optional: run NeuroVision at boot after pieeg-server.
+# Edit User/WorkingDirectory/API key, then:
+#   sudo cp neurovision.service /etc/systemd/system/
+#   sudo systemctl daemon-reload && sudo systemctl enable --now neurovision
+#   journalctl -u neurovision -f
+[Unit]
+Description=NeuroVision EEG -> Gemini art
+After=network-online.target pieeg-server.service
+Wants=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/neurovision
+Environment=GEMINI_API_KEY=replace-me
+ExecStart=/home/pi/neurovision/.venv/bin/python -m neurovision run --source pieeg
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

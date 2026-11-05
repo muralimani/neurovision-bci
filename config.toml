@@ -1,0 +1,42 @@
+# NeuroVision configuration. Command-line flags override these values.
+
+output_dir = "output"
+profiles_path = "profiles/personal.json"   # created by `calibrate`; used automatically if present
+dry_run = false
+
+[eeg]
+sample_rate = 250
+# Match these to where you place the 8 PiEEG electrodes (10-20 names).
+# Region comes from the first letter (F/C/P/O/T), side from the number (odd=left, even=right, z=midline).
+channel_labels = ["Fp1", "Fp2", "C3", "C4", "P3", "P4", "O1", "O2"]
+mains_hz = 50.0          # UK/EU/India 50, US 60
+window_sec = 4.0
+update_sec = 1.0
+smoothing = 0.25
+stable_sec = 3.0
+
+[source]
+# "synthetic" today -> "pieeg" when the board arrives. Nothing else changes.
+kind = "synthetic"
+pieeg_url = "ws://localhost:1616"   # pieeg-server on the same Pi
+pieeg_token = ""                    # only when pieeg-server runs with --auth
+csv_path = ""
+synthetic_state = "relaxed"
+synthetic_scenario = ""             # e.g. "relaxed:40,focused:40,stressed:30,meditative:40"
+
+[gemini]
+api_key_env = "GEMINI_API_KEY"
+image_model = "gemini-3.1-flash-image"          # Nano Banana 2
+video_model = "veo-3.1-fast-generate-preview"   # check ai.google.dev for the current Veo id
+text_model = "gemini-flash-latest"              # only for prompt_mode = "llm"
+prompt_mode = "template"                        # template | llm
+aspect_ratio = "16:9"
+style = "luminous abstract digital painting"
+make_video = false
+video_from_image = true
+
+[trigger]
+mode = "on_change"        # on_change | interval
+cooldown_sec = 30         # never generate more often than this (cost control)
+interval_sec = 120        # on_change: also refresh after this long; interval: fixed period
+min_confidence = 0.45
