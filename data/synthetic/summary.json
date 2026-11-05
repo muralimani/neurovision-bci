@@ -1,0 +1,161 @@
+{
+  "sample_rate": 250,
+  "units": "microvolts",
+  "channels": [
+    "Fp1",
+    "Fp2",
+    "C3",
+    "C4",
+    "P3",
+    "P4",
+    "O1",
+    "O2"
+  ],
+  "states": {
+    "relaxed": {
+      "file": "relaxed.csv",
+      "description": "Calm wakefulness, eyes closed: strong 10 Hz posterior alpha, little beta.",
+      "mean_relative_band_power": {
+        "delta": 0.0779,
+        "theta": 0.0845,
+        "alpha": 0.7435,
+        "beta": 0.0901,
+        "gamma": 0.004
+      },
+      "arousal": 0.118,
+      "valence": 0.548,
+      "peak_alpha_hz": 10.0,
+      "example_image_prompt": "A luminous abstract digital painting visualising a human mind in a relaxed state: a still lake at dusk reflecting soft auroras, gentle mist drifting over water. Visual emphasis follows the measured brain rhythms: soft, flowing waves of light (75% alpha); dreamlike, surreal, hazy imagery (9% theta); crisp geometric structure and fine detail (9% beta). Colour palette: sage green and sky blue, violet and magenta, amber and warm white. Energy: very calm, almost motionless, wide open negative space. Mood: neutral, balanced lighting. No text, no letters, no logos, no anatomical brain diagrams, no people's faces.",
+      "example_video_prompt": "A cinematic, slowly evolving shot of luminous abstract digital painting visualising a human mind in a relaxed state: a still lake at dusk reflecting soft auroras, gentle mist drifting over water. Visual emphasis follows the measured brain rhythms: soft, flowing waves of light (75% alpha); dreamlike, surreal, hazy imagery (9% theta); crisp geometric structure and fine detail (9% beta). Colour palette: sage green and sky blue, violet and magenta, amber and warm white. Energy: very calm, almost motionless, wide open negative space. Mood: neutral, balanced lighting. Motion pulses gently at about 9 beats per second in the light, camera drifts slowly. No cuts. No text, no letters, no logos, no anatomical brain diagrams, no people's faces."
+    },
+    "focused": {
+      "file": "focused.csv",
+      "description": "Active concentration: alpha desynchronised, 15-25 Hz beta and frontal-midline theta elevated.",
+      "mean_relative_band_power": {
+        "delta": 0.0867,
+        "theta": 0.1891,
+        "alpha": 0.1378,
+        "beta": 0.5696,
+        "gamma": 0.0168
+      },
+      "arousal": 0.733,
+      "valence": -0.015,
+      "peak_alpha_hz": 7.0,
+      "example_image_prompt": "A luminous abstract digital painting visualising a human mind in a focused state: a crystalline lattice of light converging to a single bright point, clean precise lines. Visual emphasis follows the measured brain rhythms: crisp geometric structure and fine detail (61% beta); dreamlike, surreal, hazy imagery (20% theta); soft, flowing waves of light (11% alpha). Colour palette: amber and warm white, violet and magenta, sage green and sky blue. Energy: energetic, dynamic movement and contrast. Mood: neutral, balanced lighting. No text, no letters, no logos, no anatomical brain diagrams, no people's faces.",
+      "example_video_prompt": "A cinematic, slowly evolving shot of luminous abstract digital painting visualising a human mind in a focused state: a crystalline lattice of light converging to a single bright point, clean precise lines. Visual emphasis follows the measured brain rhythms: crisp geometric structure and fine detail (61% beta); dreamlike, surreal, hazy imagery (20% theta); soft, flowing waves of light (11% alpha). Colour palette: amber and warm white, violet and magenta, sage green and sky blue. Energy: energetic, dynamic movement and contrast. Mood: neutral, balanced lighting. Motion pulses gently at about 7 beats per second in the light, camera drifts slowly. No cuts. No text, no letters, no logos, no anatomical brain diagrams, no people's faces."
+    },
+    "meditative": {
+      "file": "meditative.csv",
+      "description": "Meditation: frontal theta and slowed alpha coexist, beta is quiet.",
+      "mean_relative_band_power": {
+        "delta": 0.0761,
+        "theta": 0.4648,
+        "alpha": 0.4227,
+        "beta": 0.0337,
+        "gamma": 0.0026
+      },
+      "arousal": 0.045,
+      "valence": 0.516,
+      "peak_alpha_hz": 9.0,
+      "example_image_prompt": "A luminous abstract digital painting visualising a human mind in a meditative state: an endless calm horizon where concentric ripples of light expand from a glowing centre. Visual emphasis follows the measured brain rhythms: dreamlike, surreal, hazy imagery (54% theta); soft, flowing waves of light (34% alpha); deep, slow, oceanic shapes (9% delta). Colour palette: violet and magenta, sage green and sky blue, midnight indigo. Energy: very calm, almost motionless, wide open negative space. Mood: warm, uplifting, optimistic light. No text, no letters, no logos, no anatomical brain diagrams, no people's faces.",
+      "example_video_prompt": "A cinematic, slowly evolving shot of luminous abstract digital painting visualising a human mind in a meditative state: an endless calm horizon where concentric ripples of light expand from a glowing centre. Visual emphasis follows the measured brain rhythms: dreamlike, surreal, hazy imagery (54% theta); soft, flowing waves of light (34% alpha); deep, slow, oceanic shapes (9% delta). Colour palette: violet and magenta, sage green and sky blue, midnight indigo. Energy: very calm, almost motionless, wide open negative space. Mood: warm, uplifting, optimistic light. Motion pulses gently at about 9 beats per second in the light, camera drifts slowly. No cuts. No text, no letters, no logos, no anatomical brain diagrams, no people's faces."
+    },
+    "drowsy": {
+      "file": "drowsy.csv",
+      "description": "Drowsiness / sleep onset: large slow delta and theta, alpha dropping out.",
+      "mean_relative_band_power": {
+        "delta": 0.6062,
+        "theta": 0.3334,
+        "alpha": 0.0422,
+        "beta": 0.0175,
+        "gamma": 0.0008
+      },
+      "arousal": 0.023,
+      "valence": 0.206,
+      "peak_alpha_hz": 8.0,
+      "example_image_prompt": "A luminous abstract digital painting visualising a human mind in a drowsy state: a deep twilight ocean dissolving into dreams, slow luminous jellyfish fading into darkness. Visual emphasis follows the measured brain rhythms: deep, slow, oceanic shapes (58% delta); dreamlike, surreal, hazy imagery (34% theta); soft, flowing waves of light (5% alpha). Colour palette: midnight indigo, violet and magenta, sage green and sky blue. Energy: very calm, almost motionless, wide open negative space. Mood: warm, uplifting, optimistic light. No text, no letters, no logos, no anatomical brain diagrams, no people's faces.",
+      "example_video_prompt": "A cinematic, slowly evolving shot of luminous abstract digital painting visualising a human mind in a drowsy state: a deep twilight ocean dissolving into dreams, slow luminous jellyfish fading into darkness. Visual emphasis follows the measured brain rhythms: deep, slow, oceanic shapes (58% delta); dreamlike, surreal, hazy imagery (34% theta); soft, flowing waves of light (5% alpha). Colour palette: midnight indigo, violet and magenta, sage green and sky blue. Energy: very calm, almost motionless, wide open negative space. Mood: warm, uplifting, optimistic light. Motion pulses gently at about 8 beats per second in the light, camera drifts slowly. No cuts. No text, no letters, no logos, no anatomical brain diagrams, no people's faces."
+    },
+    "stressed": {
+      "file": "stressed.csv",
+      "description": "Stress / anxiety: high-frequency beta (20-30 Hz), suppressed alpha, right-frontal activation.",
+      "mean_relative_band_power": {
+        "delta": 0.1026,
+        "theta": 0.0921,
+        "alpha": 0.0751,
+        "beta": 0.6642,
+        "gamma": 0.066
+      },
+      "arousal": 0.911,
+      "valence": -0.88,
+      "peak_alpha_hz": 11.0,
+      "example_image_prompt": "A luminous abstract digital painting visualising a human mind in a stressed state: a storm of jagged electric filaments and shattered geometric shards under pressure. Visual emphasis follows the measured brain rhythms: crisp geometric structure and fine detail (62% beta); dreamlike, surreal, hazy imagery (11% theta); deep, slow, oceanic shapes (10% delta). Colour palette: amber and warm white, violet and magenta, midnight indigo. Energy: intense, high-energy, vivid contrast and rapid motion. Mood: cool, tense, slightly ominous light. No text, no letters, no logos, no anatomical brain diagrams, no people's faces.",
+      "example_video_prompt": "A cinematic, slowly evolving shot of luminous abstract digital painting visualising a human mind in a stressed state: a storm of jagged electric filaments and shattered geometric shards under pressure. Visual emphasis follows the measured brain rhythms: crisp geometric structure and fine detail (62% beta); dreamlike, surreal, hazy imagery (11% theta); deep, slow, oceanic shapes (10% delta). Colour palette: amber and warm white, violet and magenta, midnight indigo. Energy: intense, high-energy, vivid contrast and rapid motion. Mood: cool, tense, slightly ominous light. Motion pulses gently at about 11 beats per second in the light, camera drifts slowly. No cuts. No text, no letters, no logos, no anatomical brain diagrams, no people's faces."
+    },
+    "creative": {
+      "file": "creative.csv",
+      "description": "Creative ideation / daydreaming: alpha and theta both strong, moderate beta.",
+      "mean_relative_band_power": {
+        "delta": 0.0754,
+        "theta": 0.2751,
+        "alpha": 0.4514,
+        "beta": 0.1874,
+        "gamma": 0.0107
+      },
+      "arousal": 0.248,
+      "valence": 0.316,
+      "peak_alpha_hz": 10.0,
+      "example_image_prompt": "A luminous abstract digital painting visualising a human mind in a creative state: a surreal garden where flowing ribbons of colour bloom into unexpected shapes and ideas. Visual emphasis follows the measured brain rhythms: soft, flowing waves of light (47% alpha); dreamlike, surreal, hazy imagery (25% theta); crisp geometric structure and fine detail (17% beta). Colour palette: sage green and sky blue, violet and magenta, amber and warm white. Energy: calm with gentle slow movement. Mood: warm, uplifting, optimistic light. No text, no letters, no logos, no anatomical brain diagrams, no people's faces.",
+      "example_video_prompt": "A cinematic, slowly evolving shot of luminous abstract digital painting visualising a human mind in a creative state: a surreal garden where flowing ribbons of colour bloom into unexpected shapes and ideas. Visual emphasis follows the measured brain rhythms: soft, flowing waves of light (47% alpha); dreamlike, surreal, hazy imagery (25% theta); crisp geometric structure and fine detail (17% beta). Colour palette: sage green and sky blue, violet and magenta, amber and warm white. Energy: calm with gentle slow movement. Mood: warm, uplifting, optimistic light. Motion pulses gently at about 9 beats per second in the light, camera drifts slowly. No cuts. No text, no letters, no logos, no anatomical brain diagrams, no people's faces."
+    },
+    "excited": {
+      "file": "excited.csv",
+      "description": "Excitement / joy: beta and gamma elevated with left-frontal activation (positive valence).",
+      "mean_relative_band_power": {
+        "delta": 0.0788,
+        "theta": 0.103,
+        "alpha": 0.1841,
+        "beta": 0.5474,
+        "gamma": 0.0868
+      },
+      "arousal": 0.793,
+      "valence": 0.967,
+      "peak_alpha_hz": 10.0,
+      "example_image_prompt": "A luminous abstract digital painting visualising a human mind in an excited state: a radiant burst of fireworks and sparkling particles spiralling upward in celebration. Visual emphasis follows the measured brain rhythms: crisp geometric structure and fine detail (50% beta); soft, flowing waves of light (25% alpha); dreamlike, surreal, hazy imagery (9% theta). Colour palette: amber and warm white, sage green and sky blue, violet and magenta. Energy: energetic, dynamic movement and contrast. Mood: warm, uplifting, optimistic light. No text, no letters, no logos, no anatomical brain diagrams, no people's faces.",
+      "example_video_prompt": "A cinematic, slowly evolving shot of luminous abstract digital painting visualising a human mind in an excited state: a radiant burst of fireworks and sparkling particles spiralling upward in celebration. Visual emphasis follows the measured brain rhythms: crisp geometric structure and fine detail (50% beta); soft, flowing waves of light (25% alpha); dreamlike, surreal, hazy imagery (9% theta). Colour palette: amber and warm white, sage green and sky blue, violet and magenta. Energy: energetic, dynamic movement and contrast. Mood: warm, uplifting, optimistic light. Motion pulses gently at about 10 beats per second in the light, camera drifts slowly. No cuts. No text, no letters, no logos, no anatomical brain diagrams, no people's faces."
+    }
+  },
+  "mood_journey": {
+    "file": "mood_journey.csv",
+    "segments": [
+      [
+        "relaxed",
+        40
+      ],
+      [
+        "focused",
+        40
+      ],
+      [
+        "stressed",
+        30
+      ],
+      [
+        "meditative",
+        40
+      ],
+      [
+        "creative",
+        40
+      ],
+      [
+        "excited",
+        30
+      ],
+      [
+        "drowsy",
+        40
+      ]
+    ]
+  }
+}
